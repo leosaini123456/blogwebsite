@@ -1,0 +1,12 @@
+<%- include("header") -%>
+<h1>Home Page</h1>
+<p><%= homecontent %></p>
+
+<% postdata.forEach(function(data){ %>
+    <h1><%= data.Title %></h1>
+    <p><%= data.Desc.substring(0,100) + " ..." %></p>
+    <a href="/posts/<%=data._id%>">Read More</a>
+<% }) %>
+
+
+<%- include("footer") -%>

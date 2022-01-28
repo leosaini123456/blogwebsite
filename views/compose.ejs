@@ -1,0 +1,9 @@
+<%- include("header") -%>
+<h1>Add New Blog</h1>
+
+<form action="/compose" method="post">
+    <input type="text" placeholder="Post Title" name="postTitle">
+    <input type="text" placeholder="Description" name="postDesc">
+    <input type="submit">
+</form>
+<%- include("footer") -%>
